@@ -26,3 +26,23 @@ for (let anchor of anchors) {
   })
 }
 
+const coursesSee = document.querySelector('.course__link');
+const coursesDiv = document.querySelector('.course__list-see');
+const coursesList = document.querySelector('.course__list')
+
+coursesSee.addEventListener('click', ()=>{
+  coursesDiv.classList.toggle('active');
+  coursesList.classList.toggle('active');
+  if(coursesDiv.classList.contains('active')){
+    coursesSee.textContent = 'Свернуть'
+  }
+  else{
+    coursesSee.textContent = 'Смотреть все курсы'
+  }
+})
+
+var swiper = new Swiper(".mySwiper", {
+  
+  slidesPerView: 'auto'
+});
+
