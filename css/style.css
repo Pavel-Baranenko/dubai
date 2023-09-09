@@ -2027,3 +2027,13 @@ header {
 .img__back {
   pointer-events: none;
 }
+
+.course__list-see {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+.course__list-see.active {
+  opacity: 1;
+
+}
